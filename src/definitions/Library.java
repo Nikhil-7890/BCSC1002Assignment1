@@ -12,4 +12,9 @@ public class Library {
     public Library(Book[] currentlyAvailableBooks) {
         this.currentlyAvailableBooks = currentlyAvailableBooks;
     }
+
+    public Book[] getCurrentlyAvailableBooks() {
+        return currentlyAvailableBooks;
+    }
+
 }
