@@ -47,6 +47,13 @@ public class FrontDesk {
                     library.showAvailableBooks();
                     scanner.nextLine();
                     System.out.println("Please Enter the details of the book you want to be  issued: ");
+                    for
+                    (int bookIssuingIndex = 0; bookIssuingIndex < student.getNumberOfBooksIssuedByTheStudent(); bookIssuingIndex++) {
+                        System.out.println("Please Enter name of the book " + (bookIssuingIndex + 1) + ": ");
+                        bookName = scanner.nextLine();
+                        student.issueBooksToStudents(bookIssuingIndex, bookName);
+                    }
+                    System.out.println("Thank you for Issuing the new Book..");
             }
 
         }
