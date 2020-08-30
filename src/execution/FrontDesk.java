@@ -41,7 +41,7 @@ public class FrontDesk {
                     student.setNameOfTheStudent(scanner.nextLine());
                     System.out.println("Please Enter your University Roll number: ");
                     student.setUniversityRollNumberOfTheStudent(scanner.nextLong());
-                    System.out.println("How many books you want to issue?: ");
+                    System.out.println("How many books do you want to issue?: ");
                     student.setNumberOfBooksIssuedByTheStudent(scanner.nextInt());
                     System.out.println("These are the available books: ");
                     library.showAvailableBooks();
@@ -68,7 +68,7 @@ public class FrontDesk {
 
                     }
                     break;
-                case SHOW_ALL_MY_ISSUED_BOOKS:
+                case SHOW_ME_ALL_MY_ISSUED_BOOKS:
                     student.showIssuedBooksByStudent();
                     break;
                 case EXIT:
