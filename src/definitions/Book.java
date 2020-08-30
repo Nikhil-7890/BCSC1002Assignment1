@@ -64,3 +64,13 @@ public class Book {
     public void doReturn() {
         System.out.println("Thank you for returning the Book .");
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Book book = (Book) o;
+        return Objects.equals(getNameOfBooks(), book.getNameOfBooks()) &&
+                Objects.equals(getNameOfAuthors(), book.getNameOfAuthors()) &&
+                Objects.equals(getIsbnNumberOfBooks(), book.getIsbnNumberOfBooks());
+    }
