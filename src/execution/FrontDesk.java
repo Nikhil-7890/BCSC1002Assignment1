@@ -36,6 +36,14 @@ public class FrontDesk {
             studentChoice = scanner.nextInt();
             switch (studentChoice) {
                 case Issue_a_New_Book:
+                    scanner.nextLine();
+                    System.out.println("Please Enter your name: ");
+                    student.setNameOfTheStudent(scanner.nextLine());
+                    System.out.println("Please Enter your University Roll number: ");
+                    student.setUniversityRollNumberOfTheStudent(scanner.nextLong());
+                    System.out.println("How many books you want to issue?: ");
+                    student.setNumberOfBooksIssuedByTheStudent(scanner.nextInt());
+                    System.out.println("These are the available books: ");
             }
 
         }
