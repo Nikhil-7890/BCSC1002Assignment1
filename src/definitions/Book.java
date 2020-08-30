@@ -1,10 +1,8 @@
 /*  Created by IntelliJ IDEA.
- *  User: Divyansh Bhardwaj (dbc2201)
- *  Date: 21/08/20
- *  Time: 3:49 PM
+ *  User: Nikhil Saxena (191500501)
+ *  Date: 28/08/20
+ *  Time: 7:16PM
  *  File Name : Book.java
- * */
 package definitions;
 
-public class Book {
 }
