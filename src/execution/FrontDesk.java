@@ -33,6 +33,9 @@ public class FrontDesk {
             System.out.println("3. Show me all my issued books.");
             System.out.println("4. Exit.");
             System.out.println("Enter your choice from (1..4): ");
-        }
+            studentChoice = scanner.nextInt();
+            switch (studentChoice) {
+                case Issue_a_New_Book:
+            }
 
-    }
+        }
