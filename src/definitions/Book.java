@@ -60,3 +60,7 @@ public class Book {
     public void doCheckout() {
         System.out.println("Thank you for issuing the Book.");
     }
+
+    public void doReturn() {
+        System.out.println("Thank you for returning the Book .");
+    }
