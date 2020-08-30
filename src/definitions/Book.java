@@ -38,3 +38,15 @@ public class Book {
     public String getIsbnNumberOfBooks() {
         return isbnNumberOfBooks;
     }
+
+    public void setNameOfBooks(String nameOfBooks) {
+        this.nameOfBooks = nameOfBooks;
+    }
+
+    public void setNameOfAuthors(String nameOfAuthors) {
+        this.nameOfAuthors = nameOfAuthors;
+    }
+
+    public void setIsbnNumberOfBooks(String isbnNumberOfBooks) {
+        this.isbnNumberOfBooks = isbnNumberOfBooks;
+    }
