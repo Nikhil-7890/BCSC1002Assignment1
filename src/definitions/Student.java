@@ -57,3 +57,7 @@ public class Student {
     public void setBooksIssued(Book[] booksIssued) {
         this.nameOfBooksIssued = booksIssued;
     }
+
+    public String toString() {
+        return "Student Name: " + getName() + "University Roll Number: " + getUniversityRollNUmber() + "Number of books issued by student: " + getUniversityRollNUmber() + "Names of book issued: " + Arrays.toString(getBooksIssued());
+    }
