@@ -29,29 +29,29 @@ public class Student {
         return name;
     }
 
-    public long getUniversityRollNUmber() {
-        return universityRollNUmber;
-    }
-
-    public int getNumberOfBooksIssued() {
-        return numberOfBooksIssued;
-    }
-
-    public Book[] getBooksIssued() {
-        return nameOfBooksIssued.clone();
-    }
-
     public void setName(String name) {
         this.name = name;
 
+    }
+
+    public long getUniversityRollNUmber() {
+        return universityRollNUmber;
     }
 
     public void setUniversityRollNUmber(long universityRollNUmber) {
         this.universityRollNUmber = universityRollNUmber;
     }
 
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
     public void setNumberOfBooksIssued(int numberOfBooksIssued) {
         this.numberOfBooksIssued = numberOfBooksIssued;
+    }
+
+    public Book[] getBooksIssued() {
+        return nameOfBooksIssued.clone();
     }
 
     public void setBooksIssued(Book[] booksIssued) {
@@ -59,7 +59,7 @@ public class Student {
     }
 
     public String toString() {
-        return "Student Name: " + getName() + "University Roll Number: " + getUniversityRollNUmber() + "Number of books issued by student: " + getUniversityRollNUmber() + "Names of book issued: " + Arrays.toString(getBooksIssued());
+        return "Student Name: " + getName() + "University Roll Number: " + getUniversityRollNUmber() + "Total Number of books issued by student: " + getUniversityRollNUmber() + "Names of books issued by the Student: " + Arrays.toString(getBooksIssued());
     }
 
     @Override
@@ -90,20 +90,20 @@ public class Student {
     }
 
     /**
-     * this method will allow the student to return the book.
+     * This method will allow the student to return the book.
      *
      * @param bookName
      */
     public void doReturnBook(String bookName) {
-        System.out.println(bookName + "returned successfully");
+        System.out.println(bookName + "Returned successfully");
     }
 
     /**
-     * This method will show the list of books issued by the student.
+     * This method will show the list of total number of books issued by the student.
      */
     public void showListOfBooksIssued() {
         for (Book book : nameOfBooksIssued) {
-            System.out.println("List of books: ");
+            System.out.println("List of Books: ");
             System.out.println(book);
         }
     }
