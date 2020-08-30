@@ -25,3 +25,8 @@ public class Library {
         this.currentlyAvailableBooks = currentlyAvailableBooks;
     }
 
+    @Override
+    public String toString() {
+        return "Currently Available Books in the library are:" + Arrays.toString(currentlyAvailableBooks);
+    }
+
