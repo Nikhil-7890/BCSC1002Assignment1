@@ -79,3 +79,12 @@ public class Student {
         result = 31 * result + Arrays.hashCode(getBooksIssued());
         return result;
     }
+
+    /**
+     * This method will allow the student to issue the book.
+     *
+     * @param bookName
+     */
+    public void doIssueBook(String bookName) {
+        System.out.println(bookName + "issued successfully");
+    }
