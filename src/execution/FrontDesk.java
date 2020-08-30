@@ -45,6 +45,8 @@ public class FrontDesk {
                     student.setNumberOfBooksIssuedByTheStudent(scanner.nextInt());
                     System.out.println("These are the available books: ");
                     library.showAvailableBooks();
+                    scanner.nextLine();
+                    System.out.println("Please Enter the details of the book you want to be  issued: ");
             }
 
         }
