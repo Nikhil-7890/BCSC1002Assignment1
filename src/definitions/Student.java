@@ -61,3 +61,21 @@ public class Student {
     public String toString() {
         return "Student Name: " + getName() + "University Roll Number: " + getUniversityRollNUmber() + "Number of books issued by student: " + getUniversityRollNUmber() + "Names of book issued: " + Arrays.toString(getBooksIssued());
     }
+
+    @Override
+    public boolean equals(Object o) {
+        if (this == o) return true;
+        if (o == null || getClass() != o.getClass()) return false;
+        Student student = (Student) o;
+        return getUniversityRollNUmber() == student.getUniversityRollNUmber() &&
+                getNumberOfBooksIssued() == student.getNumberOfBooksIssued() &&
+                Objects.equals(getName(), student.getName()) &&
+                Arrays.equals(getBooksIssued(), student.getBooksIssued());
+    }
+
+    @Override
+    public int hashCode() {
+        int result = Objects.hash(getName(), getUniversityRollNUmber(), getNumberOfBooksIssued());
+        result = 31 * result + Arrays.hashCode(getBooksIssued());
+        return result;
+    }
