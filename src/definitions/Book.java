@@ -50,3 +50,13 @@ public class Book {
     public void setIsbnNumberOfBooks(String isbnNumberOfBooks) {
         this.isbnNumberOfBooks = isbnNumberOfBooks;
     }
+
+    public String toString() {
+        return "Name Of Book:" + " " + this.nameOfBooks + "\n"
+                + "Name Of Author Of Book:" + " " + getNameOfAuthors() + "\n"
+                + "ISBN Code Of The Book:" + " " + this.isbnNumberOfBooks + ".";
+    }
+
+    public void doCheckout() {
+        System.out.println("Thank you for issuing the Book.");
+    }
