@@ -25,3 +25,18 @@ public class Student {
         nameOfBooksIssued[0] = new Book();
     }
 
+    public String getName() {
+        return name;
+    }
+
+    public long getUniversityRollNUmber() {
+        return universityRollNUmber;
+    }
+
+    public int getNumberOfBooksIssued() {
+        return numberOfBooksIssued;
+    }
+
+    public Book[] getBooksIssued() {
+        return nameOfBooksIssued.clone();
+    }
