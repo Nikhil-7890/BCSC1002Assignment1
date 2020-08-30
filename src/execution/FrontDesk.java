@@ -25,5 +25,6 @@ public class FrontDesk {
         Library library = new Library();
         library.setBooksInLibrary();
         String bookName;
+        do {
 
-    }
+        }
