@@ -30,3 +30,11 @@ public class Library {
         return "Currently Available Books in the library are:" + Arrays.toString(currentlyAvailableBooks);
     }
 
+    @Override
+    public boolean equals(Object obj) {
+        if (this == obj) return true;
+        if (obj == null || getClass() != obj.getClass()) return false;
+        Library library = (Library) obj;
+        return Arrays.equals(getCurrentlyAvailableBooks(), library.getCurrentlyAvailableBooks());
+    }
+
