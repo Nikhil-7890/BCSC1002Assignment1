@@ -12,10 +12,10 @@ import definitions.Student;
 import java.util.Scanner;
 
 public class FrontDesk {
-    private static final int Issue_a_new_Book = 1;
-    private static final int Return_a_Previously_Issued_Book_First = 2;
-    private static final int Show_me_all_my_Issued_Books = 3;
-    private static final int Exit = 4;
+    private static final int ISSUE_A_NEW_BOOK = 1;
+    private static final int RETURN_A_PREVIOUSLY_ISSUED_BOOK_FIRST = 2;
+    private static final int SHOW_ME_ALL_MY_ISSUED_BOOKS = 3;
+    private static final int EXIT = 4;
 }
 
     public static void main(String[] args) {
@@ -35,7 +35,7 @@ public class FrontDesk {
             System.out.println("Enter your choice from (1..4): ");
             studentChoice = scanner.nextInt();
             switch (studentChoice) {
-                case Issue_a_New_Book:
+                case ISSUE_A_NEW_BOOK:
                     scanner.nextLine();
                     System.out.println("Please Enter your name: ");
                     student.setNameOfTheStudent(scanner.nextLine());
@@ -54,6 +54,16 @@ public class FrontDesk {
                         student.issueBooksToStudents(bookIssuingIndex, bookName);
                     }
                     System.out.println("Thank you for Issuing the new Book..");
-            }
+                    break;
+                case RETURN_A_PREVIOUSLY_ISSUED_BOOK_FIRST:
+                    if (student.getNumberOfBooksIssuedByTheStudent() == 0) {
+                        System.out.println("Sorry, no book has been issued from your account yet so the book cannot be returned.");
+                    } else {
+                        System.out.println("Enter the name of the book you want to return: ");
+                        scanner.nextLine();
+                        bookName = scanner.nextLine();
+                        if (student.returnBook(bookName)) {
+                            System.out.println("Thank you for returning the book " + bookName + ".");
+                        }
 
-        }
+                    }
