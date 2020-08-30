@@ -1,10 +1,12 @@
 /*  Created by IntelliJ IDEA.
  *  User: Nikhil Saxena (191500501)
  *  Date: 28/08/20
- *  Time: 7:16PM
+ *  Time: 4:16PM
  *  File Name : Book.java
  */
 package definitions;
+
+import java.util.Objects;
 
 public class Book {
 
@@ -28,26 +30,32 @@ public class Book {
     }
 
     public String getNameOfBooks() {
+
         return nameOfBooks;
     }
 
-    public String getNameOfAuthors() {
-        return nameOfAuthors;
-    }
-
-    public String getIsbnNumberOfBooks() {
-        return isbnNumberOfBooks;
-    }
-
     public void setNameOfBooks(String nameOfBooks) {
+
         this.nameOfBooks = nameOfBooks;
     }
 
+    public String getNameOfAuthors() {
+
+        return nameOfAuthors;
+    }
+
     public void setNameOfAuthors(String nameOfAuthors) {
+
         this.nameOfAuthors = nameOfAuthors;
     }
 
+    public String getIsbnNumberOfBooks() {
+
+        return isbnNumberOfBooks;
+    }
+
     public void setIsbnNumberOfBooks(String isbnNumberOfBooks) {
+
         this.isbnNumberOfBooks = isbnNumberOfBooks;
     }
 
@@ -77,6 +85,8 @@ public class Book {
 
     @Override
     public int hashCode() {
-        return Objects.hash(getNameOfBooks(), getNameOfAuthors(), getIsbnNumberOfBooks());
+        return Objects.hash(getNameOfBooks(),
+                getNameOfAuthors(),
+                getIsbnNumberOfBooks());
     }
 }
