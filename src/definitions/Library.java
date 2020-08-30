@@ -38,3 +38,8 @@ public class Library {
         return Arrays.equals(getCurrentlyAvailableBooks(), library.getCurrentlyAvailableBooks());
     }
 
+    @Override
+    public int hashCode() {
+        return Arrays.hashCode(getCurrentlyAvailableBooks());
+    }
+}
