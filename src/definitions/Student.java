@@ -97,3 +97,14 @@ public class Student {
     public void doReturnBook(String bookName) {
         System.out.println(bookName + "returned successfully");
     }
+
+    /**
+     * This method will show the list of books issued by the student.
+     */
+    public void showListOfBooksIssued() {
+        for (Book book : nameOfBooksIssued) {
+            System.out.println("List of books: ");
+            System.out.println(book);
+        }
+    }
+}
