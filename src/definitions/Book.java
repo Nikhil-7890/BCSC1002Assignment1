@@ -12,4 +12,9 @@ public class Book {
     private String nameOfBooks;
     private String nameOfAuthors;
     private String isbnNumberOfBooks;
-}
+
+    public Book() {
+        this.nameOfBooks = "JAVA a Beginner's Guide";
+        this.nameOfAuthors = "Herbert Schildt";
+        this.isbnNumberOfBooks = "9858147654445";
+    }
