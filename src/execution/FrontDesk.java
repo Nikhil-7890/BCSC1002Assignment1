@@ -71,3 +71,9 @@ public class FrontDesk {
                 case SHOW_ALL_MY_ISSUED_BOOKS:
                     student.showIssuedBooksByStudent();
                     break;
+                case EXIT:
+                    System.out.println("Thank you for using our service.");
+                    break;
+                default:
+                    System.out.println("Your have not entered the correct choice !");
+                    break;
