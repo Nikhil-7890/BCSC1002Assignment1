@@ -88,3 +88,12 @@ public class Student {
     public void doIssueBook(String bookName) {
         System.out.println(bookName + "issued successfully");
     }
+
+    /**
+     * this method will allow the student to return the book.
+     *
+     * @param bookName
+     */
+    public void doReturnBook(String bookName) {
+        System.out.println(bookName + "returned successfully");
+    }
